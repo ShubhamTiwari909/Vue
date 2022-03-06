@@ -122,6 +122,8 @@
       {{ JSON.stringify(formValue, null, 2) }}
     </div>
   </div>
+
+  <!-- .trim,.trim.lazy,.number are directives -->
 </template>
 
 <script>
