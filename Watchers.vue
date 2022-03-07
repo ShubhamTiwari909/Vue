@@ -1,14 +1,14 @@
 <template>
   <div>
-    <div>
+    <div class="bg-neutral-900 text-slate-200 text-center py-6 text-2xl">
       <h1>{{ volumes }}</h1>
-      <button @click="volumes += 2">Increase volume</button>
-      <button @click="volumes -= 2">Decrease volume</button>
+      <button class="bg-green-700 px-5 py-2 rounded-md text-slate-200 mx-5 my-3" @click="volumes += 2">Increase volume</button>
+      <button class="bg-red-700 px-5 py-2 rounded-md text-slate-200 mx-5 my-3" @click="volumes -= 2">Decrease volume</button>
     </div>
-    <div>
-      <input type="text" v-model="App">
-      <input type="text" v-model="AppInfo.name">
-      <input type="text" v-model="AppInfo.version">
+    <div class="bg-neutral-900 text-slate-900 text-center py-6 text-2xl">
+      <input class="mx-5 p-2 rounded-md" type="text" v-model="App">
+      <input class="mx-5 p-2 rounded-md" type="text" v-model="AppInfo.name">
+      <input class="mx-5 p-2 rounded-md" type="text" v-model="AppInfo.version">
     </div>
   </div>
 </template>
