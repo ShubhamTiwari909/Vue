@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div>
+    <!-- <div>
       <button @click="getPosts()">{{ postVisible ? "Close Post" : "Load Post" }}</button>
-    </div>
+    </div> -->
     <div v-show="postVisible">
         <div v-for="post in posts" :key="post.id">
         <h1>{{ post.ID }} {{ post.title }}</h1>
@@ -16,6 +16,10 @@
 import axios from "axios";
 export default {
   name: "GetPost",
+  //lifecycle hook for loading the data when page is loaded
+  created() {
+    this.getPosts()
+  },
   data() {
     return {
       posts: [],
